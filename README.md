@@ -32,7 +32,7 @@ It is intended to highlight both practical skills and a strong understanding of 
 
 ---
 
-## Projects
+## Skills
 
 ### Threat Detection
 - **Malware Analysis Toolkit**: A Python-based tool for analyzing malware samples and identifying potential threats. 
