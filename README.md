@@ -8,6 +8,60 @@ Welcome to the Cybersecurity Analyst project! This showcases projects, tools, an
 
 - [About](#about)
 - [Projects](#projects)
+- Enterprise Network Lab Setup
+This lab simulates a corporate IT infrastructure with Active Directory (AD), Domain Name System (DNS), and Dynamic Host Configuration Protocol (DHCP) in a virtualized environment.
+
+Lab Requirements:
+Virtualization Software: VMware Workstation, VirtualBox, or Hyper-V
+Operating System: Windows Server (2016, 2019, or 2022)
+Client OS: Windows 10/11 for testing
+Network: Internal or Host-Only network
+Step 1: Set Up a Windows Server VM
+Install Windows Server on a virtual machine.
+Assign a static IP address (e.g., 192.168.1.10).
+Rename the server (e.g., DC01).
+Step 2: Configure Active Directory (AD DS)
+Open Server Manager → Add Roles and Features.
+Install Active Directory Domain Services (AD DS).
+Promote the server to a Domain Controller (DC).
+Create a domain (e.g., corp.local).
+Reboot and verify domain setup.
+Step 3: Set Up DNS
+In Server Manager, go to DNS Manager.
+Configure Forward Lookup Zones for the domain (corp.local).
+Verify DNS resolution using nslookup.
+Step 4: Configure DHCP
+Install the DHCP Server role via Server Manager.
+Configure a DHCP scope:
+Scope Name: Corporate LAN
+IP Range: 192.168.1.100 - 192.168.1.200
+Subnet Mask: 255.255.255.0
+Gateway: 192.168.1.1
+DNS: 192.168.1.10 (AD DS Server)
+Authorize and activate the DHCP scope.
+Step 5: Join a Client Machine to the Domain
+Set up a Windows 10/11 VM.
+Assign an IP via DHCP.
+Join the domain (corp.local).
+Verify domain login using Active Directory users.
+Community Tech Support Initiative Setup
+This project involves repairing PCs/printers and training users on security best practices.
+
+Step 1: Hardware & Software Repair
+PC Repair Tasks:
+
+Run hardware diagnostics.
+Check disk health (chkdsk /f).
+Optimize performance by clearing temporary files (cleanmgr).
+Printer Repair Tasks:
+
+Update printer drivers.
+Clear print spooler (net stop spooler & net start spooler).
+Step 2: Security Training Topics
+Strong Passwords: Enforce password complexity.
+Phishing Awareness: Identify suspicious emails.
+System Updates: Enable auto-updates for OS and antivirus.
+Data Backup: Use OneDrive or external drives for backups.
 - [Threat Detection](#threat-detection)
 - [Incident Response](#incident-response)
  -[Vulnerability Assessment](#vulnerability-assessment)
