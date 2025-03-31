@@ -1,6 +1,23 @@
 # Hi, I'm Bikasha
 
-Welcome to the Cybersecurity Analyst project! This showcases projects, tools, and resources developed or curated by cybersecurity analysts. It serves as a portfolio and knowledge base to demonstrate expertise and share insights in the field of cybersecurity.
+Cybersecurity professional with expertise in threat detection, risk assessment, and incident response to protect organizations from cyber threats. Skilled in penetration testing, vulnerability management, cloud security (AWS, GCP, Azure), and SIEM tools (Splunk). Experienced in malware analysis, security automation, and compliance frameworks (NIST, CIS) to strengthen cybersecurity defences.
+
+Core Competencies:
+
+✅ Threat Detection and Incident Response: Rapid identification and mitigation of security threats using SIEM (Splunk) and MITRE ATT&CK.
+
+✅ Vulnerability Assessment & Penetration Testing – Conducting in-depth security testing to identify and remediate system weaknesses.
+
+✅ Cloud Security (AWS, GCP, Azure) – Implementing security controls and performing cloud vulnerability testing.
+
+✅ Security Automation & Hardening – Using Python to automate security tasks and enhance system resilience.
+
+✅ Risk Management & Compliance – Aligning security measures with NIST, CIS, and ISO 27001 frameworks.
+
+✅ Network Security & Forensics – Analyzing packet data, detecting anomalies, and securing network infrastructures.
+
+✅ Malware Analysis & Threat Research – Identifying and neutralizing advanced cyber threats.
+
 
 ---
 
