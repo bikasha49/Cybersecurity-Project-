@@ -1,22 +1,41 @@
-# Hi, I'm Bikasha
+### <h1>Hyper-V Internal Network Lab – Windows Server Hyper-V Configuration
 
-Cybersecurity professional with expertise in threat detection, risk assessment, and incident response to protect organizations from cyber threats. Skilled in penetration testing, vulnerability management, cloud security (AWS, GCP, Azure), and SIEM tools (Splunk). Experienced in malware analysis, security automation, and compliance frameworks (NIST, CIS) to strengthen cybersecurity defences.
+### <h2>Introduction
+This documentation walks through a hands-on lab configuring an Internal Virtual Network in Windows Server Hyper-V. We will create an isolated internal virtual switch, connect a VM and host to it, assign static IPs, adjust network adapter settings, and enable necessary firewall rules via PowerShell. The goal is to establish secure VM-to-host communication over an internal network (no external access). This showcases virtualization and cybersecurity skills like VLAN tagging, secure network practices, and Windows Firewall configuration. Below, 25 sequential screenshots (Screenshot 1 to Screenshot 25) illustrate each step.
 
-Core Competencies:
+Practical Value: This project demonstrates the ability to set up and manage virtual networks, configure VLANs, use PowerShell for firewall settings, and verify connectivity (ping and SMB). It’s a great addition to a GitHub or freelance portfolio for system administration or cybersecurity roles, highlighting hands-on skills in Hyper-V and Windows Server networking.
 
-✅ Threat Detection and Incident Response: Rapid identification and mitigation of security threats using SIEM (Splunk) and MITRE ATT&CK.
+## Prerequisites and Lab Setup
+•	Operating System: Windows Server 2019 (host name: PLABDM01 – a domain member server acting as a Hyper-V host).
 
-✅ Vulnerability Assessment & Penetration Testing – Conducting in-depth security testing to identify and remediate system weaknesses.
+•	Hyper-V Role: Installed and enabled on the host (with Hyper-V Manager available).
 
-✅ Cloud Security (AWS, GCP, Azure) – Implementing security controls and performing cloud vulnerability testing.
+•	Virtual Machine: A Windows Server 2019 VM (name: PLABDC02) to act as the internal network peer. This VM will be connected to the new internal switch.
 
-✅ Security Automation & Hardening – Using Python to automate security tasks and enhance system resilience.
+•	Privileges: Administrator access on the host and VM to modify Hyper-V settings, network configurations, and firewall rules.
 
-✅ Risk Management & Compliance – Aligning security measures with NIST, CIS, and ISO 27001 frameworks.
+# Tools Used:
 
-✅ Network Security & Forensics – Analyzing packet data, detecting anomalies, and securing network infrastructures.
+o	Hyper-V Manager (for virtual switch and VM settings)
 
-✅ Malware Analysis & Threat Research – Identifying and neutralizing advanced cyber threats.
+o	Windows Server GUI (Network Connections for IP settings)
+
+o	Windows PowerShell (Admin) (for firewall configuration)
+
+o	Command Prompt/PowerShell in VM (for connectivity testing with ping and net use)
+
+# Configuring the Hyper-V Internal Virtual Switch
+
+1.	Open Hyper-V Manager on the Host Server: On PLABDM01, launch Hyper-V Manager via Server Manager’s Tools menu. This console allows managing VMs and virtual switches on the host. In our lab domain (PRATICELABS.COM), PLABDM01 is the Hyper-V host for the new internal switch.
+   1.png
+ <p align=:center">
+ creating user <br/>
+ <img src="https://imgur.com/a/0Eroa0s" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+ <br />
+
+
+
 
 
 ---
